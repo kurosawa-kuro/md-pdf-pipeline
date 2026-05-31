@@ -7,7 +7,7 @@ AI コーディングエージェント共通の作業ガイド。
 
 - 目的: WSL 上で Markdown 原本から日本語 PDF を生成するローカル CLI パイプラインを作る
 - 対象: `Python + WeasyPrint` を本命とした Markdown → HTML → PDF 変換
-- 現状: `doc/01` と `doc/02` で仕様は具体化済み、`src/` はこれから実装する段階
+- 現状: `doc/01` と `doc/02` で仕様は具体化済み、`src/` に最小 CLI 実装が入っている段階
 
 ## 基本方針
 
@@ -35,7 +35,8 @@ doc/02_移行ロードマップ.md
 
 ## 作業上の注意
 
-- `Makefile` はまだひな形であり、存在だけでコマンド成立を前提にしない
+- `Makefile` には最小コマンドが入っているが、スモーク実行と本番想定の厳格実行は区別する
 - `Python + WeasyPrint` を初期本命とし、Pandoc などの代替案は勝手に主軸へ切り替えない
+- `src/cli.py` はデフォルトでフォント厳格チェックを行い、`make run` などは確認用に `--allow-missing-font` を使う
 - 非機密は `env/config.yaml`、ローカル秘密情報は `env/secret.yaml`、共有・本番秘密情報は Doppler（`doppler.yaml`）で管理する
 - 秘密情報はコミットしない

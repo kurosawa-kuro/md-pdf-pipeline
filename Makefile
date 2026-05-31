@@ -1,39 +1,45 @@
 .PHONY: setup build run dev test fmt lint clean
 
 # Application
-APP_NAME := <your-project>
+APP_NAME := md-pdf-pipeline
+PYTHON ?= python3
+SRC_DIR := src
+EXAMPLE_MD := $(SRC_DIR)/examples/sample.md
+EXAMPLE_PDF := out/sample.pdf
+SMOKE_FLAGS := --allow-missing-font
 
 # 初期セットアップ (依存取得・ビルド)
 setup: deps build
 	@echo "Setup complete."
 
 deps:
-	@echo "TODO: 依存をインストール (例: npm install / cargo fetch / pip install -r requirements.txt)"
+	$(PYTHON) -m pip install -r requirements.txt
 
 # ビルド
 build:
-	@echo "TODO: ビルドコマンドを記述"
+	$(PYTHON) -m compileall $(SRC_DIR)
 
 # 実行
 run:
-	@echo "TODO: 実行コマンドを記述"
+	$(PYTHON) $(SRC_DIR)/cli.py $(EXAMPLE_MD) -o $(EXAMPLE_PDF) $(SMOKE_FLAGS)
 
 # 開発 (ホットリロード)
 dev:
-	@echo "TODO: 開発サーバー / watch コマンドを記述"
+	$(PYTHON) $(SRC_DIR)/cli.py $(EXAMPLE_MD) -o $(EXAMPLE_PDF) $(SMOKE_FLAGS)
 
 # テスト
 test:
-	@echo "TODO: テストコマンドを記述"
+	$(PYTHON) -m compileall $(SRC_DIR)
+	$(PYTHON) $(SRC_DIR)/cli.py $(EXAMPLE_MD) -o $(EXAMPLE_PDF) $(SMOKE_FLAGS)
 
 # 整形
 fmt:
-	@echo "TODO: フォーマッタを記述"
+	@echo "No formatter configured yet."
 
 # 静的解析
 lint:
-	@echo "TODO: リンタを記述"
+	$(PYTHON) -m py_compile $(SRC_DIR)/*.py
 
 # クリーンアップ
 clean:
-	@echo "TODO: 成果物削除コマンドを記述"
+	rm -rf out __pycache__ $(SRC_DIR)/__pycache__

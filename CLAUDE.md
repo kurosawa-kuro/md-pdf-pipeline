@@ -11,7 +11,7 @@
 
 ## コマンド
 
-`Makefile` はまだひな形であり、以下のコマンドは実装済み手順ではない。
+現在の主なコマンドは以下。
 
 ```bash
 make setup
@@ -23,7 +23,11 @@ make fmt
 make lint
 ```
 
-コマンドを追加・案内する場合は、実際に成立する内容へ更新してから記述すること。
+補足:
+
+- `make run` / `make dev` / `make test` はサンプル入力に対するスモーク実行
+- これらは `--allow-missing-font` を付けており、フォント未導入環境でも変換確認できる
+- 厳格な日本語フォントチェックを含む実行は `python3 src/cli.py <input.md>` を使う
 
 ## ドキュメント優先順位
 
@@ -43,4 +47,5 @@ doc/02_移行ロードマップ.md
 - 仕様変更は `doc/01`、`doc/02`、必要に応じて `README.md` を同一変更で更新する
 - `Python + WeasyPrint` を初期本命とし、代替案を勝手に本命へ切り替えない
 - Google Drive 連携、GUI、複数ファイル一括変換など、`doc/02` でスコープ外としたものを先に広げない
+- `src/cli.py` のデフォルトはフォント厳格チェックありである点を崩さない
 - 非機密は `env/config.yaml`、ローカル秘密情報は `env/secret.yaml`、共有・本番秘密情報は Doppler（`doppler.yaml`）で管理する

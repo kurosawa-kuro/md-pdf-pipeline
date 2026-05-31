@@ -17,7 +17,7 @@ WSL 上で Markdown 原本から日本語 PDF を生成するためのローカ�
 - 出力: 単一 PDF
 - Google Drive 連携: 後回し
 
-## 予定構成
+## 現在の構成
 
 ```text
 .
@@ -47,14 +47,21 @@ WSL 上で Markdown 原本から日本語 PDF を生成するためのローカ�
 
 ## コマンド
 
-`Makefile` はまだひな形であり、以下は将来の反映先である。
+現在の主なコマンドは以下。
 
 ```bash
-make setup
-make build
-make run
-make test
-make lint
+make setup    # Python 依存を導入
+make build    # src/ を compileall で確認
+make run      # sample.md から sample.pdf を生成
+make test     # compileall + PDF 生成のスモークテスト
+make lint     # py_compile による構文確認
+```
+
+`make run` と `make test` は、サンプル確認のため `--allow-missing-font` を付けたスモーク実行にしている。
+本番想定の厳格なフォントチェックつき実行は次を使う。
+
+```bash
+python3 src/cli.py src/examples/sample.md
 ```
 
 ## ドキュメント
