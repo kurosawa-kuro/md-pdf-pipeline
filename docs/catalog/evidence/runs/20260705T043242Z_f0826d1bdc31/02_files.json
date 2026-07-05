@@ -1,0 +1,22 @@
+[
+  {"path": ".gitignore", "ext": "", "size": 874, "language": "other"},
+  {"path": "AGENTS.md", "ext": "md", "size": 1983, "language": "markdown"},
+  {"path": "CLAUDE.md", "ext": "md", "size": 1910, "language": "markdown"},
+  {"path": "Makefile", "ext": "", "size": 973, "language": "other"},
+  {"path": "README.md", "ext": "md", "size": 2702, "language": "markdown"},
+  {"path": "doc/01_仕様と設計.md", "ext": "md", "size": 9330, "language": "markdown"},
+  {"path": "doc/02_移行ロードマップ.md", "ext": "md", "size": 7694, "language": "markdown"},
+  {"path": "doc/03_実装カタログ.md", "ext": "md", "size": 3052, "language": "markdown"},
+  {"path": "doc/04_運用.md", "ext": "md", "size": 3343, "language": "markdown"},
+  {"path": "doc/README.md", "ext": "md", "size": 4217, "language": "markdown"},
+  {"path": "doppler.yaml", "ext": "yaml", "size": 1139, "language": "infra"},
+  {"path": "env/config.yaml", "ext": "yaml", "size": 546, "language": "infra"},
+  {"path": "requirements.txt", "ext": "txt", "size": 31, "language": "other"},
+  {"path": "src/cli.py", "ext": "py", "size": 2371, "language": "python"},
+  {"path": "src/examples/sample.md", "ext": "md", "size": 433, "language": "markdown"},
+  {"path": "src/html_renderer.py", "ext": "py", "size": 735, "language": "python"},
+  {"path": "src/markdown_loader.py", "ext": "py", "size": 698, "language": "python"},
+  {"path": "src/pdf_renderer.py", "ext": "py", "size": 2098, "language": "python"},
+  {"path": "src/styles/print.css", "ext": "css", "size": 968, "language": "css"},
+  {"path": "src/templates/base.html", "ext": "html", "size": 148, "language": "html"}
+]

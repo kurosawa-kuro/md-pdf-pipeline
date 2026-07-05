@@ -1,0 +1,22 @@
+{"status":"observed","change_signals":[
+  {"path":"README.md","commit_count":4,"churn":182,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"CLAUDE.md","commit_count":4,"churn":109,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"AGENTS.md","commit_count":4,"churn":104,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"\"doc/02_\\347\\247\\273\\350\\241\\214\\343\\203\\255\\343\\203\\274\\343\\203\\211\\343\\203\\236\\343\\203\\203\\343\\203\\227.md\"","commit_count":2,"churn":242,"distinct_authors":1,"last_changed":"2026-05-31T20:08:36+09:00"},
+  {"path":"\"doc/01_\\344\\273\\225\\346\\247\\230\\343\\201\\250\\350\\250\\255\\350\\250\\210.md\"","commit_count":2,"churn":198,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"\"doc/03_\\345\\256\\237\\350\\243\\205\\343\\202\\253\\343\\202\\277\\343\\203\\255\\343\\202\\260.md\"","commit_count":2,"churn":176,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"\"doc/04_\\351\\201\\213\\347\\224\\250.md\"","commit_count":2,"churn":136,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"Makefile","commit_count":2,"churn":63,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"src/cli.py","commit_count":1,"churn":84,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":".gitignore","commit_count":1,"churn":79,"distinct_authors":1,"last_changed":"2026-05-31T16:42:14+09:00"},
+  {"path":"src/styles/print.css","commit_count":1,"churn":76,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"src/pdf_renderer.py","commit_count":1,"churn":74,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"doc/README.md","commit_count":1,"churn":70,"distinct_authors":1,"last_changed":"2026-05-31T16:42:14+09:00"},
+  {"path":"doppler.yaml","commit_count":1,"churn":38,"distinct_authors":1,"last_changed":"2026-05-31T16:42:14+09:00"},
+  {"path":"src/html_renderer.py","commit_count":1,"churn":26,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"src/examples/sample.md","commit_count":1,"churn":22,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"src/markdown_loader.py","commit_count":1,"churn":21,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"env/config.yaml","commit_count":1,"churn":20,"distinct_authors":1,"last_changed":"2026-05-31T16:42:14+09:00"},
+  {"path":"src/templates/base.html","commit_count":1,"churn":10,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"},
+  {"path":"requirements.txt","commit_count":1,"churn":2,"distinct_authors":1,"last_changed":"2026-05-31T20:17:03+09:00"}
+]}
